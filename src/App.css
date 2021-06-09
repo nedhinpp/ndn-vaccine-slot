@@ -36,3 +36,63 @@
     transform: rotate(360deg);
   }
 }
+.thead-dark {
+  background-color: #41464b;
+  color: white;
+  border-radius: 0px 1px 2px 3px;
+}
+
+.Paid {
+  background-color: red;
+  border-radius: 3px;
+  padding: 2px 7px 2px 7px;
+  margin: 1rem;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.Free {
+  background-color: #2ecc71;
+  border-radius: 3px;
+  padding: 2px 7px 2px 7px;
+  margin: 1rem;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.smallfont {
+  font-size: 12px;
+  color: grey;
+}
+
+.stock {
+  background-color: green;
+  width: 17%;
+  color: white;
+  font-weight: 600;
+  vertical-align: middle;
+}
+.nostock {
+  background-color: #545b62;
+  color: white;
+  width: 17%;
+  font-weight: 600;
+  vertical-align: middle !important;
+}
+
+.container {
+  max-width: 1000px;
+}
+
+.selection {
+  float: left;
+  width: 15em;
+  margin: 5px 5px 5px 0px;
+}
