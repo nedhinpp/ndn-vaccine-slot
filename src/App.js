@@ -5,6 +5,7 @@ import Cookies from "universal-cookie";
 import moment from "moment";
 import audio from "./assets/audios/police_siren.mp3";
 import TelegramLink from "./Components/TelegramLink/TelegramLink";
+import { isMobile } from "react-device-detect";
 
 function App() {
   let curDate = moment().format("DD-MM-YYYY");
@@ -59,24 +60,31 @@ function App() {
           }
         })()}
 
-        <div className="custom-control custom-checkbox">
-          <input
-            type="checkbox"
-            className="custom-control-input"
-            id="enableAudioAlert"
-            defaultChecked="true"
-            onClick={(e) => {
-              setCanPlay(!canPlay);
-            }}
-          ></input>
-          <label
-            className="custom-control-label"
-            htmlFor="enableAudioAlert"
-            style={{ float: "left" }}
-          >
-            Enable Audio Alert
-          </label>
-        </div>
+        {(() => {
+          if (!isMobile) {
+            return (
+              <div className="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  className="custom-control-input"
+                  id="enableAudioAlert"
+                  defaultChecked="true"
+                  onClick={(e) => {
+                    setCanPlay(!canPlay);
+                  }}
+                ></input>
+                <label
+                  className="custom-control-label"
+                  htmlFor="enableAudioAlert"
+                  style={{ float: "left" }}
+                >
+                  Enable Audio Alert
+                </label>
+              </div>
+            );
+          }
+        })()}
+
         {useEffect(() => {
           axios
             .get("https://cdn-api.co-vin.in/api/v2/admin/location/districts/17")
@@ -227,8 +235,8 @@ function App() {
             </tr>
           </thead>
           <tbody>
+            {(nodata = false)}
             {data.map((obj, index) => {
-              nodata = false;
               return data[index].sessions.map(function (ses) {
                 if (
                   ses.available_capacity !== 0 &&
