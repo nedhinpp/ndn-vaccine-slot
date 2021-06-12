@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/ndn-vaccine-slot/static/css/main.e226feaf.chunk.css",
+    "main.js": "/ndn-vaccine-slot/static/js/main.dac6c29b.chunk.js",
+    "main.js.map": "/ndn-vaccine-slot/static/js/main.dac6c29b.chunk.js.map",
+    "runtime-main.js": "/ndn-vaccine-slot/static/js/runtime-main.4535b6d6.js",
+    "runtime-main.js.map": "/ndn-vaccine-slot/static/js/runtime-main.4535b6d6.js.map",
+    "static/js/2.ebaec613.chunk.js": "/ndn-vaccine-slot/static/js/2.ebaec613.chunk.js",
+    "static/js/2.ebaec613.chunk.js.map": "/ndn-vaccine-slot/static/js/2.ebaec613.chunk.js.map",
+    "index.html": "/ndn-vaccine-slot/index.html",
+    "static/css/main.e226feaf.chunk.css.map": "/ndn-vaccine-slot/static/css/main.e226feaf.chunk.css.map",
+    "static/js/2.ebaec613.chunk.js.LICENSE.txt": "/ndn-vaccine-slot/static/js/2.ebaec613.chunk.js.LICENSE.txt",
+    "static/media/police_siren.bacfc8b7.mp3": "/ndn-vaccine-slot/static/media/police_siren.bacfc8b7.mp3"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4535b6d6.js",
+    "static/js/2.ebaec613.chunk.js",
+    "static/css/main.e226feaf.chunk.css",
+    "static/js/main.dac6c29b.chunk.js"
+  ]
+}
