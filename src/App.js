@@ -4,7 +4,6 @@ import axios from "axios";
 import Cookies from "universal-cookie";
 import moment from "moment";
 import audio from "./assets/audios/police_siren.mp3";
-
 import TelegramLink from "./Components/TelegramLink/TelegramLink";
 
 function App() {
@@ -19,6 +18,7 @@ function App() {
   const [dose, setDose] = useState("");
   const [age, setAge] = useState("");
   let play = false;
+  let nodata = false;
 
   return (
     <div className="App">
@@ -27,7 +27,10 @@ function App() {
         <div className="container-fluid">
           <div className="navbar-header">
             <a className="navbar-brand" href="#">
-              <b>Home</b>
+              <span className="glyphicon glyphicon-envelope"></span> Home
+            </a>
+            <a className="navbar-brand" href="nidhinpp.in">
+              About
             </a>
           </div>
         </div>
@@ -225,6 +228,7 @@ function App() {
           </thead>
           <tbody>
             {data.map((obj, index) => {
+              nodata = false;
               return data[index].sessions.map(function (ses) {
                 if (
                   ses.available_capacity !== 0 &&
@@ -234,9 +238,10 @@ function App() {
                       ((dose == "1" && ses.available_capacity_dose1 > 0) ||
                         (dose == "2" && ses.available_capacity_dose2 > 0))))
                 ) {
+                  if (!nodata) nodata = true;
                   return (
                     <tr>
-                      <td className="text-left">
+                      <td className="text-left left-td">
                         <span className="name">{obj.name} </span>
                         <span className={obj.fee_type}>{obj.fee_type}</span>
                         <br />
@@ -255,7 +260,9 @@ function App() {
                       </td>
                       <td
                         className={
-                          ses.available_capacity === 0 ? "nostock" : "stock"
+                          ses.available_capacity === 0
+                            ? "nostock right-td"
+                            : "stock right-td"
                         }
                       >
                         Dose 1 : {ses.available_capacity_dose1}
@@ -268,6 +275,18 @@ function App() {
                 }
               });
             })}
+            {(() => {
+              if (!nodata && district !== "") {
+                return (
+                  <tr>
+                    <td colSpan="2">
+                      No Vaccination center is available for booking in the
+                      selected district.
+                    </td>
+                  </tr>
+                );
+              }
+            })()}
           </tbody>
         </table>
       </div>

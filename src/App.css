@@ -107,3 +107,13 @@
   border-bottom: 1px solid lightgrey;
   height: 4rem;
 }
+.navbar-brand {
+  color: gray;
+}
+.left-td {
+  width: 80%;
+}
+.right-td {
+  width: 80%;
+  vertical-align: middle !important;
+}
