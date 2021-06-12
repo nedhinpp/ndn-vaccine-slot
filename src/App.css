@@ -93,6 +93,17 @@
 
 .selection {
   float: left;
-  width: 15em;
+  width: 8em;
   margin: 5px 5px 5px 0px;
+}
+
+.smallSelection {
+  float: left;
+  width: 6em;
+  margin: 5px 5px 5px 0px;
+}
+
+.nav-default {
+  border-bottom: 1px solid lightgrey;
+  height: 4rem;
 }
