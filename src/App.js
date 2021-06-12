@@ -4,7 +4,7 @@ import axios from "axios";
 import Cookies from "universal-cookie";
 import moment from "moment";
 import audio from "./assets/audios/police_siren.mp3";
-import Notify from "./Components/Notification/Notify.js";
+
 import TelegramLink from "./Components/TelegramLink/TelegramLink";
 
 function App() {
