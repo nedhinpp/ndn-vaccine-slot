@@ -30,7 +30,11 @@ function App() {
             <a className="navbar-brand" href="#">
               <span className="glyphicon glyphicon-envelope"></span> Home
             </a>
-            <a className="navbar-brand" href="nidhinpp.in">
+            <a
+              className="navbar-brand"
+              target="_blank"
+              href="https://nidhinpp.in/"
+            >
               About
             </a>
           </div>
@@ -38,6 +42,8 @@ function App() {
       </nav>
 
       <div className="container" style={{ marginTop: "2rem" }}>
+        <h2>Vaccine Availability Tracker</h2>
+
         {(() => {
           if (district === "305") {
             return <TelegramLink name="Kozhikode" tid="c0vidVaccine" />;
@@ -60,30 +66,24 @@ function App() {
           }
         })()}
 
-        {(() => {
-          if (!isMobile) {
-            return (
-              <div className="custom-control custom-checkbox">
-                <input
-                  type="checkbox"
-                  className="custom-control-input"
-                  id="enableAudioAlert"
-                  defaultChecked="true"
-                  onClick={(e) => {
-                    setCanPlay(!canPlay);
-                  }}
-                ></input>
-                <label
-                  className="custom-control-label"
-                  htmlFor="enableAudioAlert"
-                  style={{ float: "left" }}
-                >
-                  Enable Audio Alert
-                </label>
-              </div>
-            );
-          }
-        })()}
+        <div className="custom-control custom-checkbox">
+          <input
+            type="checkbox"
+            className="custom-control-input"
+            id="enableAudioAlert"
+            defaultChecked="true"
+            onClick={(e) => {
+              setCanPlay(!canPlay);
+            }}
+          ></input>
+          <label
+            className="custom-control-label"
+            htmlFor="enableAudioAlert"
+            style={{ float: "left" }}
+          >
+            Enable Audio Alert
+          </label>
+        </div>
 
         {useEffect(() => {
           axios
