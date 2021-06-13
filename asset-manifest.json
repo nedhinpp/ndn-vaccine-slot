@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/ndn-vaccine-slot/static/css/main.e226feaf.chunk.css",
-    "main.js": "/ndn-vaccine-slot/static/js/main.dac6c29b.chunk.js",
-    "main.js.map": "/ndn-vaccine-slot/static/js/main.dac6c29b.chunk.js.map",
+    "main.css": "/ndn-vaccine-slot/static/css/main.a4f3e51b.chunk.css",
+    "main.js": "/ndn-vaccine-slot/static/js/main.ae67f11b.chunk.js",
+    "main.js.map": "/ndn-vaccine-slot/static/js/main.ae67f11b.chunk.js.map",
     "runtime-main.js": "/ndn-vaccine-slot/static/js/runtime-main.4535b6d6.js",
     "runtime-main.js.map": "/ndn-vaccine-slot/static/js/runtime-main.4535b6d6.js.map",
-    "static/js/2.ebaec613.chunk.js": "/ndn-vaccine-slot/static/js/2.ebaec613.chunk.js",
-    "static/js/2.ebaec613.chunk.js.map": "/ndn-vaccine-slot/static/js/2.ebaec613.chunk.js.map",
+    "static/js/2.bb2c89dd.chunk.js": "/ndn-vaccine-slot/static/js/2.bb2c89dd.chunk.js",
+    "static/js/2.bb2c89dd.chunk.js.map": "/ndn-vaccine-slot/static/js/2.bb2c89dd.chunk.js.map",
     "index.html": "/ndn-vaccine-slot/index.html",
-    "static/css/main.e226feaf.chunk.css.map": "/ndn-vaccine-slot/static/css/main.e226feaf.chunk.css.map",
-    "static/js/2.ebaec613.chunk.js.LICENSE.txt": "/ndn-vaccine-slot/static/js/2.ebaec613.chunk.js.LICENSE.txt",
+    "static/css/main.a4f3e51b.chunk.css.map": "/ndn-vaccine-slot/static/css/main.a4f3e51b.chunk.css.map",
+    "static/js/2.bb2c89dd.chunk.js.LICENSE.txt": "/ndn-vaccine-slot/static/js/2.bb2c89dd.chunk.js.LICENSE.txt",
     "static/media/police_siren.bacfc8b7.mp3": "/ndn-vaccine-slot/static/media/police_siren.bacfc8b7.mp3"
   },
   "entrypoints": [
     "static/js/runtime-main.4535b6d6.js",
-    "static/js/2.ebaec613.chunk.js",
-    "static/css/main.e226feaf.chunk.css",
-    "static/js/main.dac6c29b.chunk.js"
+    "static/js/2.bb2c89dd.chunk.js",
+    "static/css/main.a4f3e51b.chunk.css",
+    "static/js/main.ae67f11b.chunk.js"
   ]
 }
